@@ -1,0 +1,163 @@
+ <!-- <h1> call function in angular</h1>
+
+ <button (click)="getName('i m calling you')">Go</button>  -->
+<!-- ...................................................................................................... -->
+<!-- <h1>Important Events in Angular</h1> -->
+<!-- keyup event
+keyup with enter and space
+keydown
+blur -->
+<!-- ...................................................................................................... -->
+<!-- KEYUP EVENT -->
+<!-- <button (click)="myEvent('onesagain')">CLick me</button>
+<br>
+<br>
+<input type="text" #box (keyup)="myEvent(box.value)" placeholder="Write something"> -->
+<!-- ...................................................................................................... -->
+
+<!-- keyup with enter and space keyup.enter/keyup.space -->
+<!-- <input type="text" placeholder="Write some thing" #box (keyup.space)="myEvent(box.value)">
+<button>click</button> -->
+<!-- ...................................................................................................... -->
+<!-- <h1>Get text value in angular</h1> -->
+<!-- get value with value change
+get value with button click -->
+<!-- get value with value change -->
+<!-- <input type="text" placeholder="write something" (keyup)="getValue($event.target.value)"> -->
+<!-- get value with button click -->
+<!-- <input type="text" placeholder="write something" #box>
+<button (click)="getValue(box.value)">Go</button>
+ <h2>{{currentval}}</h2> -->
+<!-- ...................................................................................................... -->
+<!-- condition in angular
+Make if Condition
+Make If else Condition
+Make Condition with string
+Make elseif condition
+Make condition with property Binding -->
+
+<!-- ...................................................................................................... -->
+<!-- <h1 *ngIf="show">
+    if block
+</h1> -->
+
+
+<!-- <h1>{{name}}</h1> -->
+<!-- <h1>{{obj.name}}
+    {{obj.age}}
+    {{obj.class}}
+</h1> -->
+<!-- <button (click)="getName()">click me</button> -->
+
+<!--array  -->
+<!-- <h1 *ngFor="let item of music">{{item}}</h1> -->
+<!-- <li *ngFor="let item of car">
+    {{item.Name}}
+    {{item.Price}}
+</li> -->
+<!-- simple form -->
+<!-- <h1>Simple Form in Angular </h1>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text"  ngModel name="fname" placeholder="Enter your name.."><br><br>
+    <input type="text" ngModel name="age" placeholder="Enter your age.."><br><br>
+    <input type="email" ngModel name="email" placeholder="Enter your email.."><br><br>
+    <input type="password"  ngModel name="fname" placeholder="Enter your password."><br><br>
+    <button>Send</button>
+</form> -->
+
+<!-- interpolation  kuch v data aap ts file se html mein lejaana jhate ho uske liye interpolation use hota h-->
+<!-- <button (click)="getName()">click me</button> -->
+<!-- <li *ngFor="let item of carstructure">
+    {{item}}
+
+</li> -->
+<!-- <div *ngIf="currentCustomer">Hello</div> -->
+<!-- <h1>{{car.name}}
+    {{car.price}}
+</h1> -->
+<!-- <h1 *ngFor="let type of language">{{type}}</h1> -->
+
+
+
+<!--                      1st part done                         --> 
+
+
+
+
+<!-- date29/04/2021 time-6:10 -->
+<!----------------------- *******interpolation******* ---------------------------------------------------->
+<!-- kuch v data agr aap tsfile se lejaana jhate ho htmlfile mein uske liye interpolation use hota h -->
+<!-- 1)with variable
+    2)with function
+    3)with object
+    4)with array
+-->
+<!-- 1)with variable -->
+<!-- <h1>{{name}}<hr>
+    {{age}}
+</h1> -->
+<!-- 2)with function -->
+<!-- <h1>{{callMyname()}}</h1> -->
+<!--  -->
+<!-- 3)with object -->
+<!-- <h1>{{car.name}}
+    {{car.colour}}
+</h1> -->
+<!-- with array -->
+<!-- <h1>{{fruit[2]}}</h1> -->
+<!--                               interpolation end                                                  -->
+<!--                                call function                                       -->
+<!-- <button (click)="clickMe()">click</button> -->
+<!-- <button (click)="getMyName('i m calling u')">Go</button> -->
+<!--                                    call function end                                               -->
+
+<!--ngfor--/forloop(custom html attribute hota hai jiske dvaara hum html mein for loop use kar skte hai) -->
+<!-- <li *ngFor="let list of fruit">{{list}}</li> -->
+<!-- arrary of object -->
+<!-- <li *ngFor="let item of mobile">{{item.name}}
+    {{item.price}}
+</li> -->
+<!-- ngif--/conditionalopertaor h ye hmesh true ya false hota h  true daalnge display pr show krega false daalnge nhi krega-->
+<!-- <h1 *ngIf="youSaySomething">helloooooooo world</h1> -->
+<!--                 simple form                -->
+<!-- <h1>simple form of angular</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text" ngModel name="name" placeholder="Enter your name"><br><br>
+    <input type="text" ngModel  name="email" placeholder="Enter your email"><br><br>
+    <input type="number" ngModel  name="contactNum" placeholder="Enter your contact num" ><br><br>
+    <input type="password" ngModel name="password" placeholder="Enter your password"><br><br>
+
+
+    <button>submit</button>
+
+</form> -->
+
+<!--                     1st part end                                -->
+
+<!--                      2nd part         start                                -->
+
+
+<!--                               important event                                 -->
+<!-- 1)click event -->
+<!-- <h1>Click event</h1>
+<button (click)="myEvent('click Event')">clickMe</button> -->
+<!--                  2)keyUp event                 -->
+<!-- <h1>KeyUpEvent</h1>
+<input type="text" #box (keyup)="myEvent(box.value)"> -->
+<!--                   3)keyUp.enter/keyup.space -->
+<!-- <input type="text" #box (keyup.enter)="myEvent(box.value)">  -->
+<!-- <input type="text" #box (keyup.space)="myEvent(box.value)">  -->
+
+<!--                   property binding          bind a property with html     
+ ----------          square bracket us karte h attribute mein,      -->
+<!-- <h1>Property binding in angualr</h1>
+<input type="text" [disabled]="disabledBox" [value]=name><br><br>
+<input type="text" disabled={{disabledBox}} value={{name}}>
+<br><br>
+<button (click)="enabledBox()">Enable Textbox</button> -->
+<!-- property binding mein aap non-string v aap use kar skte ho pr interpolation mein sirf string 
+value ko hi use kar skte h -->
+<!-- <li *ngFor="let list of mobile">{{list}}</li> -->
+
+<h1 *ngIf="hiiloooo">helooooooooooooooooooo</h1>
+
